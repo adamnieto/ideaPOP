@@ -11,7 +11,7 @@ $(document).ready(function(){
 		var word;
 		for(word = 0; word < arrayWords.length; ++word) {
 			$("#images").empty();
-			$("#mytextarea").val($("#mytextarea").val() + " " + arrayWords[word]);
+			$("#mytextarea").text($("#mytextarea").val() + " " + arrayWords[word]);
 			$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
 				tags: arrayWords[word],
 				tagmode: "any",
