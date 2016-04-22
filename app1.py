@@ -15,6 +15,7 @@ def product():
 @app.route("/get_data", methods=['POST'])
 def handle_data():
     textBox = request.form["ideaBox"]
+    # getString.main(textBox)
     indexValues = getString.processString(textBox)
     searchTerms = getString.getSearchValues(indexValues, textBox)
     arrayLinks = getImage.main(searchTerms)

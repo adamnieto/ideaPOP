@@ -34,8 +34,9 @@ def findLink(googleData):
     return finalString
 
 def imageAPI(searchTerms):
-    if os.path.isfile("linkdir.txt") and os.stat("linkdir.txt").st_size > 0:
-        os.remove("linkdir.txt")
+    arrayLinks = []  # empty list for array of links from search terms
+    # if os.path.isfile("linkdir.txt") and os.stat("linkdir.txt").st_size > 0:
+    #     os.remove("linkdir.txt")
     for term in searchTerms:
         # Build a service object for interacting with the API. Visit
         # the Google APIs Console <http://code.google.com/apis/console>
@@ -53,8 +54,11 @@ def imageAPI(searchTerms):
         ).execute()
         linkRes = findLink(str(res))
         link = linkRes[linkRes.find('h'):-1]
-        output = open("linkdir.txt","a")
-        output.write(link + "\n")
-        output.close()
+        arrayLinks.append(link)
+    return arrayLinks
+        # output = open("linkdir.txt","a")
+        # output.write(link + "\n")
+        # output.close()
 def main(searchTerms):
-    imageAPI(searchTerms)
+    arrayLinks = imageAPI(searchTerms)
+    return arrayLinks
