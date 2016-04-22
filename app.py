@@ -15,25 +15,20 @@ def product():
 @app.route("/get_data", methods=['POST'])
 def handle_data():
     textBox = request.form["ideaBox"]
-    getString.main(textBox)
     indexValues = getString.processString(textBox)
-    searchTerms= getString.getSearchValues(indexValues, textBox)
-    getImage.main(searchTerms)
+    searchTerms = getString.getSearchValues(indexValues, textBox)
+    arrayLinks = getImage.main(searchTerms)
+    termCounter = 0
     termInfo = ""
-    inFile = open("linkdir.txt","r")
     code = ""
-    link = ""
-    for i in inFile:
-        if i != "\n":
-            link += i
-        code += '<img class="img-circle" src="'+ link + '">'
-        link = ""
-    counter = 0
+    for linkAddress in arrayLinks:
+        code += '<img class="img-circle" src="'+ linkAddress + '">'
+
     for term in searchTerms:
-        if counter == 0:
+        if termCounter == 0:
             termInfo += term.strip("\n")
             termInfo += " "
-            counter += 1
+            termCounter += 1
         else:
             termInfo += ", " + term.strip("\n")
             termInfo += " "
