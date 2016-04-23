@@ -1,6 +1,6 @@
 # :bulb:ideaPOP:thought_balloon:
 
-* Concept: A website that makes your ideas come to life. 
+* Concept: A website that allows you to visualize your ideas. 
 
 * Uses Google API and Flask
 
