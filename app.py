@@ -22,7 +22,8 @@ def handle_data():
     termInfo = ""
     code = ""
     for linkAddress in arrayLinks:
-        code += '<img class="img-circle" src="'+ linkAddress + '">'
+        if linkAddress != "}":
+            code += '<img class="img-circle" src="'+ linkAddress + '">'
 
     for term in searchTerms:
         if termCounter == 0:
