@@ -1,1 +1,1 @@
-web: python ideaPOP/app.py
+web: python app.py
