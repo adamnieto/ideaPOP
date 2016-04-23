@@ -5,6 +5,7 @@
   <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
 	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" type="text/css" rel="stylesheet">
   <link href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='animate/animate.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='Hover-master/css/hover.css') }}">
   <link href="{{ url_for('static', filename='css/main.css') }}" type="text/css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
@@ -66,5 +67,10 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  <script>
+    document.ready(animate(){
+        $('#images').addClass('animated zoomInDown');
+    });
+  </script>
 </body>
 </html>
