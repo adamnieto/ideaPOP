@@ -1,11 +1,9 @@
-# :bulb:ideaPOP:thought_balloon:
+# IdeaPOP
+Concept: A website that makes your ideas come to life.
 
-* Concept: A website that allows you to visualize your ideas. 
+Uses Google API and Flask
 
-* Uses Google API and Flask
+MAKE SURE TO RUN THIS WITH PYTHON  3.4 or it will not work!
 
-* MAKE SURE TO RUN THIS WITH PYTHON  3.4 or it will not work!
-
-* This website is currently using Bootstrap and fontAwesome. 
-
-
+This website is currently using Bootstrap and fontAwesome.
+![alt tag](screenshots/ideaPOPExample.png "Here is an example of what this program can do!")
