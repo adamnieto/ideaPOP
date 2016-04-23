@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, url_for, Markup
-import getString, getImage
+import getString, getImage, os
 app = Flask(__name__)
 
 # setting up the basic route
