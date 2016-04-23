@@ -1,4 +1,4 @@
-# :bulb:IdeaPOP:thought_balloon:
+# :bulb:ideaPOP:thought_balloon:
 
 * Concept: A website that makes your ideas come to life. 
 
