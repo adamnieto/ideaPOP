@@ -35,4 +35,5 @@ def handle_data():
     return render_template("product.html",images= Markup(code),termInfo=termInfo,textBox=textBox)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
