@@ -23,7 +23,7 @@ def handle_data():
     code = ""
     for linkAddress in arrayLinks:
         if linkAddress != "}":
-            code += '<img class="img-circle" src="'+ linkAddress + '">'
+            code += '<img class="img-circle" src="'+ linkAddress + "href=" + linkAddress + '">'
 
     for term in searchTerms:
         if termCounter == 0:
