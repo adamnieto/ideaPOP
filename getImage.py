@@ -60,5 +60,8 @@ def imageAPI(searchTerms):
         # output.write(link + "\n")
         # output.close()
 def main(searchTerms):
-    arrayLinks = imageAPI(searchTerms)
-    return arrayLinks
+    try:
+      arrayLinks = imageAPI(searchTerms)
+      return arrayLinks
+    else: 
+      return "An error occured with the Google API. The limit placement on daily usage may have gone over the limit" 

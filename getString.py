@@ -26,6 +26,6 @@ def processString(textBox):
     return indexValues
 
 def main(textBox):
-    indexValues = processString(textBox)
+    indexValues = processString(textBox.strip('\n'))
     searchTerms = getSearchValues(indexValues, textBox)
     getImage.main(searchTerms)
