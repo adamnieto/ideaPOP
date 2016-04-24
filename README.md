@@ -6,4 +6,11 @@ Uses Google API and Flask
 MAKE SURE TO RUN THIS WITH PYTHON  3.4 or it will not work!
 
 This website is currently using Bootstrap and fontAwesome.
+<<<<<<< HEAD
 ![alt tag](screenshots/ideaPOPExample.png "Here is an example of what this program can do!")
+=======
+
+Here is an example of what this program can do!
+
+![alt tag](screenshots/ideaPOPExample.png "ideaPOPScreenshot Image")
+>>>>>>> master
