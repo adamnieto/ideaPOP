@@ -1,4 +1,4 @@
-# ideaPOP
+# :bulb: ideaPOP :boom:
 Concept: A website that makes your ideas come to life.
 
 Uses Google API and Flask
