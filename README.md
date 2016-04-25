@@ -7,4 +7,4 @@ Concept: A program that allows you to visualize your ideas.
 
 Here is an example of what this program can do!
 
-![alt tag](static/images/ideaPOPExample.png "ideaPOPScreenshot Image")
+![alt tag](static/images/ideaPOPExample1.png "ideaPOPScreenshot Image")
