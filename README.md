@@ -9,4 +9,4 @@ This website is currently using Bootstrap and fontAwesome.
 
 Here is an example of what this program can do!
 
-![alt tag](screenshots/ideaPOPExample.png "ideaPOPScreenshot Image")
+![alt tag](static/images/ideaPOPExample.png "ideaPOPScreenshot Image")
