@@ -46,7 +46,7 @@ def imageAPI(searchTerms):
 
         res = service.cse().list(
           q=term,
-          cx='017491541522676942495:plkvt5o3nws',
+          cx='',
           num= 1,
           start= 1,
           searchType= "image",
