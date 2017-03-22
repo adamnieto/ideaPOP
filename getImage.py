@@ -19,7 +19,7 @@
 Command-line application that does a search.
 """
 
-__author__ = 'anrox14@google.com (Adam Nieto)'
+__author__ = 'author-name'
 
 from googleapiclient.discovery import build
 import urllib.request
@@ -42,7 +42,7 @@ def imageAPI(searchTerms):
         # the Google APIs Console <http://code.google.com/apis/console>
         # to get an API key for your own application.
         service = build("customsearch", "v1",
-                developerKey="AIzaSyC4kjCRoVm2Ins4H-ZJutBL26awYWOt_7M")
+                developerKey=key)
 
         res = service.cse().list(
           q=term,
