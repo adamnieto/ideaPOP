@@ -1,5 +1,5 @@
 # :bulb: ideaPOP :boom:
-Concept: A program that allows you to visualize your ideas. 
+**Concept:** A program that allows you to visualize your ideas. 
 
 * Uses Google API and Flask
 
